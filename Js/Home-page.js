@@ -46,6 +46,9 @@ about.addEventListener("click",()=>{
      document.querySelector(".about-container").scrollIntoView();
 });
 
+contact.addEventListener("click",()=>{
+    document.querySelector(".contact-me").scrollIntoView();
+});
 
 
 
