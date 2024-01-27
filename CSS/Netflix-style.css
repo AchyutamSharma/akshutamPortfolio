@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&family=Poppins:wght@300;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+.main {
+    background-image: url(./img/bg-1.jpg);
+    height: 80vh;
+    position: relative;
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 100px;
+
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .down-text {
+    display: block;
+}
+
+.down-text {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.hero {
+
+    font-family: 'Poppins', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 15px;
+    /*This project is created by Achyutam*/
+    padding: 0 30 0 30px;
+}
+
+.hero> :nth-child(1) {
+
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.separation {
+    background-color: rgb(39, 39, 39);
+    height: 8px;
+    width: 100%;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 600;
+    color: whitesmoke;
+    background-color: rgba(247, 247, 247, 0.036);
+    border: 1px solid rgba(255, 255, 255, 0.71);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 8px 24px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    font-size: 0.825rem;
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 97px 8px 10px;
+    border-radius: 4px;
+    color: whitesmoke;
+    border: 1px solid rgba(255, 255, 255, 0.71);
+    background-color: rgba(23, 23, 23, 0.7);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    flex-wrap: wrap;
+
+}
+
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 400px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 95px;
+    right: 6px;
+    width: 295px;
+    padding-right: 48px;
+}
+
+.forthImg {
+    position: relative;
+}
+
+.forthImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.forthImg video {
+    position: absolute;
+    top: 70px;
+    right: 55px;
+    width: 350px;
+    padding-right: 48px;
+}
+
+
+h1 {
+    font-size: 56px;
+}
+
+.first-p {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.second {
+    position: relative;
+}
+
+
+.fAQ>h2 {
+    font-size: 36px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.accordion-container {
+    box-sizing: border-box;
+
+}
+
+#accordion {
+    margin: 100px auto;
+    width: 60vw;
+}
+
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #383838;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#accordion li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+/* if we use '&gt;','&lt;' then we use this beacuse it rotate 90deg }*/
+/*
+.faqbox svg{
+    flex-shrink: 0;
+    transform: rotate(90deg);
+}
+*/
+
+#accordion label+input[type="radio"] {
+    /* this is use for hide radio button */
+    display: none;
+}
+
+#accordion .content {
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    /* it hide the inside text */
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion label+input[type="radio"]:checked+.content {
+    max-height: 400px;
+    /* its show first one after that, when user click the 2/3 accordion that time it open*/
+}
+
+/*
+.accordion:hover {
+    background-color: rgb(36, 36, 36);
+    color: #ffffff;
+}
+*/
+
+#accordion li:hover {
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+    background-color: rgb(65, 65, 65);
+}
+
+.main2 input {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 97px 8px 10px;
+    border-radius: 4px;
+    color: whitesmoke;
+    border: 1px solid rgba(255, 255, 255, 0.71);
+    background-color: rgba(23, 23, 23, 0.7);
+}
+
+.last-text-1 {
+    font-family: 'Martel', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    /*This project is created by Achyutam*/
+    margin: auto auto 60px auto;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    color: white;
+    margin: auto;
+    max-width: 60vw;
+    padding: 14px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+footer .question {
+    padding: 34px 0;
+}
+
+@media screen and (max-width:1300px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 19px;
+    }
+    footer {
+        max-width: 90vw;
+    }
+    .footer-item{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .hero-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 289px;
+        left: 53px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+    .fAQ>h2 {
+        font-size: 30px;
+        padding-top: 30px;
+        text-align: center;
+    }
+}

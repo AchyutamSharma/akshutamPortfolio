@@ -1,0 +1,116 @@
+:root{
+    --bgcolor : #001220;
+    --purpelColor : #a469fa;
+    --blueColor : #4a00ff;
+    --txt : #ecead3;
+    --green : #00c614;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: var(--bgcolor);
+    color: var(--txt);
+    text-align: center;
+}
+
+#NavBar{
+    background-color: var(--purpelColor);
+    color: var(--bgcolor);
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 0 0 40px 40px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-left: 50px ;
+}
+
+.headings{
+    margin-left: 0;
+    font-size: 2rem;
+}
+.nav-container{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: end;
+}
+.Home-Page-logo{
+    height: 60px;
+    margin-left: 60px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.list{
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--bgcolor);
+    margin: 20px 40px 10px 10px;
+    list-style: none;
+
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover{
+    background-color: var(--purpelColor);
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 40px;
+    font-size: 2rem;
+}
+#user-score, #comp-score{
+    font-size: 3.5rem;
+}
+.msg-container{
+    margin: 4rem;
+    
+}
+#msg{
+    padding: 1rem 2rem;
+    background-color: var(--purpelColor);
+    color: var(--bgcolor);
+    font-size: 2rem;
+    display: inline;
+    border-radius: 2rem;
+    font-weight: 600;
+    
+}

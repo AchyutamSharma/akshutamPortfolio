@@ -1,0 +1,41 @@
+:root{
+    --bgcolor : #001220;
+    --purpelColor : #a469fa;
+    --blueColor : #4a00ff;
+    --txt : #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#NavBar{
+    background-color: var(--purpelColor);
+    height: 70px;
+    
+    border: 1px solid black;
+    border-radius: 0 0 40px 40px ;
+    z-index: 1000;
+}
+.nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    float: right;
+}
+.Home-Page-logo{
+    height: 60px;
+    margin-left: 60px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.list{
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--bgcolor);
+    margin: 20px 40px 10px 10px;
+    list-style: none;
+
+}
