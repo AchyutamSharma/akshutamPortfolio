@@ -2,6 +2,7 @@ let netflix = document.querySelector(".Netflix-card");
 let rockGame = document.querySelector(".Rock-Paper-card");
 let foodBox = document.querySelector(".Food-Box-card");
 let CurrencyExhanger = document.querySelector(".Currency-card");
+let otp = document.querySelector(".otp");
 
 let dots = document.querySelector("#open-Mobile-nav");
 let openNav = document.querySelector(".mobile-nav "); //open-nav
@@ -69,6 +70,10 @@ foodBox.addEventListener("click",()=>{
 
 CurrencyExhanger.addEventListener("click",()=>{
     window.open("CurrExchange.html",'_blank');
+});
+
+otp.addEventListener("click",()=>{
+    window.open("Otp.html",'_blank');
 });
 
         // scroll up 
