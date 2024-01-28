@@ -2,7 +2,7 @@ let netflix = document.querySelector(".Netflix-card");
 let rockGame = document.querySelector(".Rock-Paper-card");
 let foodBox = document.querySelector(".Food-Box-card");
 let CurrencyExhanger = document.querySelector(".Currency-card");
-let otp = document.querySelector(".otp");
+let otp = document.querySelector("#otps");
 
 let dots = document.querySelector("#open-Mobile-nav");
 let openNav = document.querySelector(".mobile-nav "); //open-nav
