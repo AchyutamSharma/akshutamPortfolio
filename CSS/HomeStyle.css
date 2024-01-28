@@ -330,7 +330,9 @@ p {
 .card-img-4 {
     height: 235px;
 }
-
+.card-img-5 {
+    height: 199px;
+}
 .cards img {
     border: 1px solid #000000;
     border-radius: 15px;
