@@ -480,7 +480,8 @@ footer {
 
     /* Styles for screens up to 600px wide -- Mobile*/
     .dot-container {
-        display: inline;
+        display: block;
+        background-color: #1111118e;
     }
     
 
@@ -598,6 +599,7 @@ footer {
 
     .dot-container {
         display: block;
+        background-color: #1111118e;
     }
 
     .main-container {
