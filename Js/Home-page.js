@@ -14,32 +14,30 @@ let contact = document.getElementById("li-contact");
 let scrollUp = document.querySelector(".scrollUp");
 
 
-let hamburger = ()=>{
-    openNav.classList.toggle("hide");
-    document.querySelector(".hamburger").classList.toggle("rotate");
 
-}
 
+
+// let hamburger = ()=>{
+//     openNav.classList.toggle("hide");
+//     document.querySelector(".hamburger").classList.toggle("rotate");
+// }
 // open and close tab 
 // let Navopen = ()=>{
     //     hamburger();
     // };
     
-    let Navclose = ()=>{
-        openNav.classList.add("hide");
-    };
-    
+    // let Navclose = ()=>{
+    //     openNav.classList.add("hide");
+    // };
     //  let closeMobNav = crossBtn.addEventListener("click",()=>{
         //     Navclose();
         // });
-        
-        
-dots.addEventListener("click",()=>{
-    hamburger();       
-});
+// dots.addEventListener("click",()=>{
+//     hamburger();       
+// });
 
 project.addEventListener("click",()=>{
-    hamburger();
+    // hamburger();
     document.querySelector(".tech").scrollIntoView();
 });
 
