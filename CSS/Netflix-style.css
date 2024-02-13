@@ -13,7 +13,8 @@ body {
 
 
 .main {
-    background-image: url(./img/bg-1.jpg);
+    /* padding: 10px; */
+    background-image: url(../img/bg-1.jpg);
     height: 80vh;
     position: relative;
     background-size: max(1200px, 100vw);
@@ -24,11 +25,11 @@ body {
 .main .box {
     height: 80vh;
     width: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     opacity: 0.69;
     position: absolute;
     top: 0;
-
+    
 }
 
 nav {
@@ -71,7 +72,7 @@ nav button {
 }
 
 .hero {
-
+    padding: 0 10px;
     font-family: 'Poppins', sans-serif;
     height: calc(100% - 100px);
     display: flex;
@@ -150,6 +151,7 @@ nav button {
     color: whitesmoke;
     border: 1px solid rgba(255, 255, 255, 0.71);
     background-color: rgba(23, 23, 23, 0.7);
+    outline: none;
 }
 
 .first {
@@ -168,7 +170,7 @@ nav button {
 section.first>div {
     display: flex;
     flex-direction: column;
-    padding: 34px 0;
+    padding: 30px 0;
 }
 
 .secImg {
@@ -382,11 +384,11 @@ footer .question {
     .first {
         flex-wrap: wrap;
     }
-
+    
     .secImg {
         width: 305px;
     }
-
+    
     .secImg video {
         width: 289px;
         left: 53px;
@@ -395,11 +397,11 @@ footer .question {
     .hero> :nth-child(1) {
         font-size: 32px;
     }
-
+    
     .hero> :nth-child(2) {
         font-size: 18px;
     }
-
+    
     .hero> :nth-child(3) {
         font-size: 18px;
     }
@@ -407,5 +409,165 @@ footer .question {
         font-size: 30px;
         padding-top: 30px;
         text-align: center;
+    }
+}
+@media screen and (max-width:424px)and (min-width:359px) {
+    nav img{
+        height: 30px;
+    }
+    .hero> :nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 14px;
+    }
+    
+    .hero> :nth-child(3) {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .main input,.hero-btn input{
+        width: 200px;
+    }
+    .btn-red{
+        height: 40px;
+        width: auto;
+        font-size: 14px;
+    }
+    .first h1{
+        font-size: 1.5rem;
+    }
+    .first-p{
+        font-size: 1rem;
+    }
+    section.first>div {
+        padding: 30px 0;
+    }
+    .secImg img{
+        width: 300px;
+    }
+    .secImg video {
+        top: 75px;
+        width: 220px;
+        left: 40px;
+    }
+    .forthImg img{
+        width: 350px;
+    }
+    .forthImg video{
+        width: 200px;
+        top: 50px;
+        left: 73px;
+    }
+    .fAQ h2{
+        font-size: 1.5rem;
+        padding: 20px 20px 0 20px;
+    }
+    #accordion {
+        margin: 30px auto;
+        width: 75vw
+    }
+    #accordion li {
+    font-size: 14px;
+    text-wrap: wrap;
+    }
+    #accordion li label {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .last-text-1 h3{
+        font-size: 1rem;
+        margin: 20px;
+    }
+    .question{
+        font-size: 14px;
+    }
+    .footer-item{
+        gap: 10px;
+        margin-left: 10px;
+        font-size: 12px;
+        text-align: start;
+    }
+}    
+
+@media screen and (min-width:300px) and (max-width:358px){
+
+    nav img{
+        height: 30px;
+    }
+    .hero> :nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 14px;
+    }
+    
+    .hero> :nth-child(3) {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .main input,.hero-btn input{
+        width: 200px;
+    }
+    .btn-red{
+        height: 40px;
+        font-size: 14px;
+        width: auto;
+    }
+    .first h1{
+        font-size: 1.5rem;
+    }
+    .first-p{
+        font-size: 1rem;
+    }
+    section.first>div {
+        padding: 30px 0;
+    }
+    .secImg img{
+        width: 300px;
+    }
+    .secImg video {
+        top: 75px;
+        width: 220px;
+        left: 40px;
+    }
+    .forthImg img{
+        width: 350px;
+    }
+    .forthImg video{
+        width: 200px;
+        top: 50px;
+        left: 73px;
+    }
+    .fAQ h2{
+        font-size: 1.5rem;
+        padding: 20px 20px 0 20px;
+    }
+    #accordion {
+        margin: 30px auto;
+        width: 75vw
+    }
+    #accordion li {
+    font-size: 14px;
+    text-wrap: wrap;
+    }
+    #accordion li label {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .last-text-1 h3{
+        font-size: 1rem;
+        margin: 20px;
+    }
+    .question{
+        font-size: 14px;
+    }
+    .footer-item{
+        gap: 10px;
+        margin-left: 10px;
+        font-size: 12px;
+        text-align: start;
     }
 }
